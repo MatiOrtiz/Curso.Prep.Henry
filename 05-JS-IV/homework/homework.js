@@ -80,7 +80,7 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ([objeto]['key'] === 'propiedad'){
+  if (objeto [propiedad]){
     return true;
   }
   return false;
@@ -151,7 +151,7 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
   producto.calcularPrecioDescuento = function (){
-    return (this.precio - (this.precio * this.porcentajeDescuento));
+    return (this.precio - (this.precio * this.porcentajeDeDescuento));
   };
     return producto;
 }
